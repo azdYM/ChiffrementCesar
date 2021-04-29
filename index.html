@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="chiffrer">
+            <div class="text">
+                <h2>Entrer un message </h2>
+    
+                <input
+                    class="message"
+                    type="text" 
+                    placeholder="Entrer votre message"
+                >
+
+                <div class="cle">
+                    <h2>Entrer votre clef </h2>
+        
+                    <input
+                        class="key"
+                        type="text" 
+                        placeholder="Entrer votre clef"
+                        
+                    >
+                </div>
+                <button type="button" onclick="encrypteCesarMessage();">Chiffrer</button>
+            </div>
+            
+            <div class="message-chiffrer">
+
+            </div>
+        </div>
+
+        <div class="dechiffrer">
+            <div class="text">
+                <h2>Entrer le code </h2>
+                <input
+                class="code"
+                type="text" 
+                placeholder="Entrer votre code"
+            
+                >
+
+                <div class="cle">
+                    <h2>Entrer votre clef </h2>
+                </div>
+                
+                <button type="button" onclick="decrypteCesarMessage();">Dechiffrer</button>
+    
+            </div>
+            <div class="message-dechiffrer">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>
